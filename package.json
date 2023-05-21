@@ -1,0 +1,27 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "",
+  "main": "aa.js",
+  "scripts": {
+    "dev": "pnpm -C play dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jack-7788/tpf-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jack-7788/tpf-ui/issues"
+  },
+  "homepage": "https://github.com/jack-7788/tpf-ui#readme",
+  "dependencies": {
+    "@tpf/components": "workspace:^1.0.0",
+    "@tpf/theme-chalk": "workspace:^1.0.0",
+    "@tpf/utils": "workspace:^1.0.0",
+    "typescript": "^5.0.4",
+    "vue": "^3.3.4"
+  }
+}
