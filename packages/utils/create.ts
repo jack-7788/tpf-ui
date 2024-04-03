@@ -1,3 +1,9 @@
+import { aa } from '@tpf/components'
+import { bb } from '@tpf/theme-chalk'
+
+aa(2, 4)
+
+
 function _bem(prefixName: string, blockSuffix: string, element: string, modifier: string) {
   if (blockSuffix) {
     prefixName += `_${blockSuffix}`
@@ -17,13 +23,13 @@ function _bem(prefixName: string, blockSuffix: string, element: string, modifier
 
 
 function createBEM(prefixName: string) {
-  const b = (block: string = '') => _bem(prefixName, block, '', '')
-  const e = (element: string = '') => _bem(prefixName, '', element, '')
-  const m = (modifier: string = '') => _bem(prefixName, '', '', modifier)
-  const be = (block: string = '', element: string = '') => _bem(prefixName, block, element, '')
-  const bm = (block: string = '', modifier: string = '') => _bem(prefixName, block, '', modifier)
-  const em = (element: string = '', modifier: string = '') => _bem(prefixName, '', element, modifier)
-  const bem = (block: string = '', element: string = '', modifier: string = '') => _bem(prefixName, block, element, modifier)
+  const b = (block = '') => _bem(prefixName, block, '', '')
+  const e = (element = '') => _bem(prefixName, '', element, '')
+  const m = (modifier = '') => _bem(prefixName, '', '', modifier)
+  const be = (block = '', element = '') => _bem(prefixName, block, element, '')
+  const bm = (block = '', modifier = '') => _bem(prefixName, block, '', modifier)
+  const em = (element = '', modifier = '') => _bem(prefixName, '', element, modifier)
+  const bem = (block = '', element = '', modifier = '') => _bem(prefixName, block, element, modifier)
 
   const is = (name: string, state: boolean | string) => state ? `is-${name}` : ''
   return { b, e, m, be, bm, em, bem, is }

@@ -5,8 +5,9 @@
   "description": "",
   "main": "aa.js",
   "scripts": {
+    "serve": "node  scripts/dev.js @tpf/components -f global -s",
     "dev": "pnpm -C play dev",
-    "dev:docs":"pnpm -C docs dev"
+    "dev:docs": "pnpm -C docs dev"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,8 @@
   },
   "homepage": "https://github.com/jack-7788/tpf-ui#readme",
   "dependencies": {
-    "@tpf/components": "workspace:^1.0.0",
-    "@tpf/theme-chalk": "workspace:^1.0.0",
+    "@tpf/components": "workspace:^",
+    "@tpf/theme-chalk": "workspace:^",
     "@tpf/utils": "workspace:^1.0.0",
     "typescript": "^5.0.4",
     "vue": "^3.3.4"
@@ -31,6 +32,7 @@
     "@vue/eslint-config-typescript": "^11.0.3",
     "eslint": "^8.41.0",
     "eslint-plugin-vue": "^9.13.0",
+    "minimist": "^1.2.8",
     "sass": "^1.62.1"
   }
 }
